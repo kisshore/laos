@@ -5,7 +5,8 @@
 ##### How to run docker container with resources
 
 ```
-docker run -itd --memory=4m --cpus=32 -p 4001:4001  kishorebjv/random:pennr
+docker run -itd --memory=4m --cpus=32 -p 4001:4001 --name pennrserver  kishorebjv/random:pennr
+docker exec -it pennrserver bash
 
 ```
 
